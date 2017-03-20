@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextItemName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="Item Name"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextItemAmount"
+            android:layout_below="@+id/editTextItemName"
+            android:layout_alignParentStart="true"
+            android:hint="Item Amount"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/buttonSave"
+            android:layout_below="@+id/editTextItemAmount"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>
